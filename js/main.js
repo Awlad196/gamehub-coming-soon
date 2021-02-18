@@ -139,5 +139,6 @@
 				$('.subscribe-message').text("Thanks for subscribing.");
 			}
 		});
+
 	}
 })(jQuery);
