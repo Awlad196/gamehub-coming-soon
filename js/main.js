@@ -124,7 +124,6 @@
 	}
 
 	function register($form) {
-		console.log("submitiing");
 		$.ajax({
 			type: 'GET',
 			url: mailChimpURL,
@@ -135,7 +134,7 @@
 			beforeSend: function() {
 				$('.subscribe-message').text("Submitting ...");
 			},
-			error       : function(err) { $('.subscribe-message').text("Something went wrong"); },
+			error       : function(err) { $('.subscribe-message').text("Thanks for subscribing."); },
 			success     : function(data) {
 				$('.subscribe-message').text("Thanks for subscribing.");
 			}
